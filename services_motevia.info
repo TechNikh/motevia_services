@@ -1,0 +1,7 @@
+name = Motevia Services
+description = Build Motevia Views.
+package = Services
+core = 7.x
+dependencies[] = services
+dependencies[] = views
+dependencies[] = services_views
