@@ -190,6 +190,7 @@ $handler->display->display_options['fields']['bundle']['id'] = 'bundle';
 $handler->display->display_options['fields']['bundle']['table'] = 'field_config_instance';
 $handler->display->display_options['fields']['bundle']['field'] = 'bundle';
 $handler->display->display_options['fields']['bundle']['label'] = '';
+$handler->display->display_options['fields']['bundle']['exclude'] = TRUE;
 $handler->display->display_options['fields']['bundle']['alter']['alter_text'] = 0;
 $handler->display->display_options['fields']['bundle']['alter']['make_link'] = 0;
 $handler->display->display_options['fields']['bundle']['alter']['absolute'] = 0;
@@ -276,11 +277,47 @@ $handler->display->display_options['fields']['field_name']['element_default_clas
 $handler->display->display_options['fields']['field_name']['hide_empty'] = 0;
 $handler->display->display_options['fields']['field_name']['empty_zero'] = 0;
 $handler->display->display_options['fields']['field_name']['hide_alter_empty'] = 1;
+/* Field: Fields: Widget */
+$handler->display->display_options['fields']['data_widget']['id'] = 'data_widget';
+$handler->display->display_options['fields']['data_widget']['table'] = 'field_config_instance';
+$handler->display->display_options['fields']['data_widget']['field'] = 'data_widget';
+$handler->display->display_options['fields']['data_widget']['label'] = 'Widget Type';
+$handler->display->display_options['fields']['data_widget']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['external'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['word_boundary'] = 1;
+$handler->display->display_options['fields']['data_widget']['alter']['ellipsis'] = 1;
+$handler->display->display_options['fields']['data_widget']['alter']['more_link'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['data_widget']['alter']['html'] = 0;
+$handler->display->display_options['fields']['data_widget']['element_label_colon'] = 0;
+$handler->display->display_options['fields']['data_widget']['element_default_classes'] = 1;
+$handler->display->display_options['fields']['data_widget']['hide_empty'] = 0;
+$handler->display->display_options['fields']['data_widget']['empty_zero'] = 0;
+$handler->display->display_options['fields']['data_widget']['hide_alter_empty'] = 1;
 /* Filter criterion: Fields: entity_type */
 $handler->display->display_options['filters']['entity_type']['id'] = 'entity_type';
 $handler->display->display_options['filters']['entity_type']['table'] = 'field_config_instance';
 $handler->display->display_options['filters']['entity_type']['field'] = 'entity_type';
 $handler->display->display_options['filters']['entity_type']['value'] = 'node';
+/* Filter criterion: Fields: Widget */
+$handler->display->display_options['filters']['data_widget']['id'] = 'data_widget';
+$handler->display->display_options['filters']['data_widget']['table'] = 'field_config_instance';
+$handler->display->display_options['filters']['data_widget']['field'] = 'data_widget';
+$handler->display->display_options['filters']['data_widget']['value'] = 'text_textarea_with_summary';
+$handler->display->display_options['filters']['data_widget']['expose']['operator_id'] = 'data_widget_op';
+$handler->display->display_options['filters']['data_widget']['expose']['label'] = 'Widget';
+$handler->display->display_options['filters']['data_widget']['expose']['use_operator'] = FALSE;
+$handler->display->display_options['filters']['data_widget']['expose']['operator'] = 'data_widget_op';
+$handler->display->display_options['filters']['data_widget']['expose']['identifier'] = 'data_widget';
+$handler->display->display_options['filters']['data_widget']['expose']['required'] = FALSE;
+$handler->display->display_options['filters']['data_widget']['expose']['remember'] = FALSE;
+$handler->display->display_options['filters']['data_widget']['expose']['multiple'] = FALSE;
 
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');

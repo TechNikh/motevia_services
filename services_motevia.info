@@ -5,3 +5,7 @@ core = 7.x
 dependencies[] = services
 dependencies[] = views
 dependencies[] = services_views
+
+; Handlers
+files[] = views/handlers/services_motevia_handler_field_field_config_instance_data_widget.inc
+files[] = views/handlers/services_motevia_handler_filter_field_config_instance_data_widget.inc
